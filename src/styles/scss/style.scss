@@ -1,13 +1,17 @@
 @import 'partials/colors';
-@import 'partials/mixins';
+@import 'partials/mixins/mixins';
 
 $type : 'link';
 
 .palette{
     width:150px;
     height:50px;
+    
     &-#{$type}{
         background: color('link');
+        &:hover{
+            background: color('link','dark');
+        }
     }
 }
 
