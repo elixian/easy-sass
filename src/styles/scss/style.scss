@@ -1,0 +1,13 @@
+@import 'partials/colors';
+@import 'partials/mixins';
+
+$type : 'link';
+
+.palette{
+    width:150px;
+    height:50px;
+    &-#{$type}{
+        background: color('link');
+    }
+}
+

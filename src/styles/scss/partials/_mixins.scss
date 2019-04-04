@@ -1,0 +1,19 @@
+
+// Function to access colors in palette with optional tone/shade
+
+@function color($semantic, $tone:'base'){
+	
+	@if map-has-key($palette, $semantic){
+		$color: map-get($palette,$semantic);
+		
+		@if map-has-key($color,$tone){
+			$tint : map-get($color,$tone);
+			@warn "color tint `#{$tint}`";
+			@return $tint;
+        }
+        @warn "unknown tone `#{$tone}` in color";
+        @return null; 
+    }
+    @warn "unknown color `#{$color}` in palette";
+    @return null;
+}
