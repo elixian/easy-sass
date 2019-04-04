@@ -1,0 +1,23 @@
+
+
+//______________ See _settings for set up size button __________
+
+$save : 'save';
+
+.btn{
+    display: inline-block;
+    border-radius: 5px;
+    color: white;
+    padding: .5em;
+    text-decoration: none;
+    text-align: center;
+    min-width: $btn-size_min ;
+
+    &_#{$save}{
+        background:color($save);
+        &:hover{
+            background:color($save,'light');
+        }
+    }
+
+}

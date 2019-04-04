@@ -1,17 +1,20 @@
+@import 'partials/settings';
 @import 'partials/colors';
 @import 'partials/mixins/mixins';
+@import 'partials/components/components';
+@import 'partials/utils';
 
-$type : 'link';
 
-.palette{
-    width:150px;
-    height:50px;
-    
-    &-#{$type}{
-        background: color('link');
-        &:hover{
-            background: color('link','dark');
-        }
+article{
+    margin: 2rem auto;
+
+    .info{
+        display: block;
+        text-align:center;
+        margin-top:.5rem;
     }
 }
+
+
+
 

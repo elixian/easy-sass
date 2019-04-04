@@ -1,3 +1,6 @@
+.debug, .grid > div {
+  border: 1px dotted red; }
+
 /*
         @include keyframes(psod){
             0%  {opacity:1;}
@@ -5,10 +8,29 @@
         };
         @include animation('psod 5s 3');
         */
-.palette {
-  width: 150px;
-  height: 50px; }
-  .palette-link {
-    background: #245fca; }
-    .palette-link:hover {
-      background: #2055b4; }
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  color: white;
+  padding: .5em;
+  text-decoration: none;
+  text-align: center;
+  min-width: 150px; }
+  .btn_save {
+    background: #198c73; }
+    .btn_save:hover {
+      background: #28d9b2; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px; }
+
+.justify-center {
+  justify-self: center; }
+
+article {
+  margin: 2rem auto; }
+  article .info {
+    display: block;
+    text-align: center;
+    margin-top: .5rem; }

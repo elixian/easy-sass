@@ -1,0 +1,10 @@
+$debug : true;
+$btn-size_min : 150px;
+
+
+@if $debug{
+    @warn "ok is true";
+    .debug , .grid>div{
+        border: 1px dotted red;
+    }
+}
