@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
-.debug, .grid > div {
-  border: 1px dotted red; }
-
+/*    Button settings
+=============================================== */
 /*
         @include keyframes(psod){
             0%  {opacity:1;}
@@ -9,9 +7,9 @@
         };
         @include animation('psod 5s 3');
         */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 .btn {
   display: inline-block;
-  border-radius: 5px;
   color: white;
   padding: .5em;
   text-decoration: none;
@@ -21,17 +19,33 @@
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+  /*      Flat
+    ========================*/
+  /*      rounded
+    ========================*/
+  /*      shadow
+    ========================*/
+  /*       Iteration button 
+    =========================================== */ }
+  .btn-flat {
+    border: transparent; }
+  .btn-rounded {
+    border-radius: 5px; }
   .btn-shadow:hover {
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2); }
   .btn_save {
     background: #198c73; }
     .btn_save:hover {
       background: #28d9b2; }
+  .btn_delete {
+    background: #FF5A43; }
+    .btn_delete:hover {
+      background: #ff9d90; }
 
 .grid {
   display: grid;
-  grid-template-columns: 200px; }
+  grid-template-columns: repeat(auto-fill, 200px); }
 
 .justify-center {
   justify-self: center; }
@@ -42,6 +56,7 @@ html, body {
 article {
   margin: 2rem 3rem; }
   article .info {
+    margin-top: .5rem;
     display: block;
     text-align: center;
     font-size: .7rem;

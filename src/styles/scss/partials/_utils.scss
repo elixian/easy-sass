@@ -2,7 +2,7 @@
 
 .grid{
     display:grid;
-    grid-template-columns: 200px;
+    grid-template-columns: repeat(auto-fill,200px);
 }
 
 .justify-center{

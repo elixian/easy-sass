@@ -1,6 +1,10 @@
-$debug : true;
-$btn-size_min : 150px;
+$debug : false;
 
+/*    Button settings
+=============================================== */
+$btn-size_min : 150px  !default; // size button
+$btn-rounded_radius : 5px !default; // border-radius
+$btn-border : transparent !default;
 
 @if $debug{
     @warn "ok is true";

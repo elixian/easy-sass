@@ -60,5 +60,10 @@ $palette: (
     light: $color-green--light,
     base: $color-green,
     dark: $color-green--dark
+  ),
+  delete:(
+    light: $color-red--light,
+    base: $color-red,
+    dark: $color-red--dark
   )
 );
