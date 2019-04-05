@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vows --spec",
+    "test": "node-sass --watch src/styles/scss/ -o src/styles/css/",
     "scss": "node-sass --watch src/styles/scss/ -o src/styles/css/"
   },
   "author": "Franck Colombo",
