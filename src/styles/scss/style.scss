@@ -3,15 +3,21 @@
 @import 'partials/mixins/mixins';
 @import 'partials/components/components';
 @import 'partials/utils';
+@import 'partials/fonts';
 
 
+html,body{
+    font-family: $font-family_poppins;
+}
 article{
-    margin: 2rem auto;
+    margin: 2rem 3rem;
 
     .info{
         display: block;
         text-align:center;
+        font-size: .7rem;
         margin-top:.5rem;
+        color: color('neutral','dark');
     }
 }
 

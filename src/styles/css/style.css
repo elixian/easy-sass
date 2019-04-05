@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 .debug, .grid > div {
   border: 1px dotted red; }
 
@@ -28,9 +29,14 @@
 .justify-center {
   justify-self: center; }
 
+html, body {
+  font-family: "Poppins", sans-serif; }
+
 article {
-  margin: 2rem auto; }
+  margin: 2rem 3rem; }
   article .info {
     display: block;
     text-align: center;
-    margin-top: .5rem; }
+    font-size: .7rem;
+    margin-top: .5rem;
+    color: #555; }
