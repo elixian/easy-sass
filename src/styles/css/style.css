@@ -1,7 +1,7 @@
 /*              Butons
 =============================== */
 @import url("https://fonts.googleapis.com/css?family=Poppins");
-.btn {
+button.btn, a.btn {
   display: inline-block;
   color: white;
   padding: .5em;
@@ -13,27 +13,27 @@
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
-  .btn-flat_border {
-    border: 1px solid black; }
-  .btn-rounded {
+  button.btn-flat_border, a.btn-flat_border {
+    border: 2px solid black; }
+  button.btn-rounded, a.btn-rounded {
     border-radius: 5px; }
-  .btn-shadow:hover {
+  button.btn-shadow:hover, a.btn-shadow:hover {
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2); }
-  .btn_save {
+  button.btn_save, a.btn_save {
     background: #198c73; }
-    .btn_save:hover {
+    button.btn_save:hover, a.btn_save:hover {
       background: #21b797; }
-  .btn_delete {
+  button.btn_delete, a.btn_delete {
     background: #d6331d; }
-    .btn_delete:hover {
+    button.btn_delete:hover, a.btn_delete:hover {
       background: #e55441; }
-  .btn_modify {
+  button.btn_modify, a.btn_modify {
     background: #fd811b; }
-    .btn_modify:hover {
+    button.btn_modify:hover, a.btn_modify:hover {
       background: #fd9d4e; }
-  .btn_cancel {
+  button.btn_cancel, a.btn_cancel {
     background: #ccc; }
-    .btn_cancel:hover {
+    button.btn_cancel:hover, a.btn_cancel:hover {
       background: #dadada; }
 
 /*          GRID
@@ -50,15 +50,21 @@
 
 /*             CSS DISPLAY EXEMPLE
 ===============================================*/
-html, body {
-  font-family: "Poppins", sans-serif; }
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box; }
 
 section {
   text-align: center;
   margin: 5rem auto; }
+  section .grid {
+    margin-bottom: 4rem; }
 
 article {
-  margin: 2rem auto; }
+  margin: 2rem auto;
+  width: 60%;
+  padding: 3rem;
+  box-shadow: 0px 0px 2px black; }
   article .info {
     margin-top: .5rem;
     display: block;

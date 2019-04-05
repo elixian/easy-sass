@@ -7,7 +7,7 @@ $listButtons : ('save','delete','modify','cancel');
 
 /*              Butons
 =============================== */
-.btn{
+button.btn,a.btn{
     display: inline-block;
     color: white;
     padding: .5em;
