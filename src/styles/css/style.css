@@ -1,3 +1,5 @@
+/*              Butons
+=============================== */
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 .btn {
   display: inline-block;
@@ -34,6 +36,8 @@
     .btn_cancel:hover {
       background: #dadada; }
 
+/*          GRID
+=======================================*/
 .grid {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -44,6 +48,8 @@
 .justify-center {
   justify-self: center; }
 
+/*             CSS DISPLAY EXEMPLE
+===============================================*/
 html, body {
   font-family: "Poppins", sans-serif; }
 
