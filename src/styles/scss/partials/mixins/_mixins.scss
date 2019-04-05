@@ -61,13 +61,13 @@
   animation: #{$str};      
 }
         //******** USAGE ***************
-        /*
-        @include keyframes(psod){
-            0%  {opacity:1;}
-            90% { opacity:0;}
-        };
-        @include animation('psod 5s 3');
-        */
+        //*
+        //@include keyframes(psod){
+        //    0%  {opacity:1;}
+        //     90% { opacity:0;}
+        // };
+        // @include animation('psod 5s 3');
+        // */
 
 //***************************************
 //*             TRANSITION              **
