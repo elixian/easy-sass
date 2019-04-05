@@ -11,10 +11,12 @@
 			@return $tint;
         }
         @warn "unknown tone `#{$tone}` in color";
-        @return null; 
+         
+    }@else{
+        @warn "no color define in palette, return fdefault trasparent ";
+        @return 'transparent';
     }
-    @warn "unknown color `#{$color}` in palette";
-    @return null;
+
 }
 
 // font size mixins

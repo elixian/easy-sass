@@ -2,7 +2,7 @@
 
 //______________ See _settings for set up size button __________
 
-$listButtons : ('save','delete');
+$listButtons : ('save','delete','modify','cancel');
 
 
 
@@ -18,7 +18,9 @@ $listButtons : ('save','delete');
     //*      Flat
     //========================*/
     &-flat{
-        border: $btn-border;
+        &_border{
+            border: $btn-border;
+        }  
     }
 
     //*      rounded

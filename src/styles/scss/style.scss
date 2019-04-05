@@ -9,14 +9,18 @@
 html,body{
     font-family: $font-family_poppins;
 }
+section{
+    text-align: center;
+    margin:5rem auto;
+}
 article{
-    margin: 2rem 3rem;
+    margin: 2rem auto;
 
     .info{
         margin-top:.5rem;
         display: block;
         text-align:center;
-        font-size: .7rem;
+        font-size: .6rem;
         padding: 0.5rem;
        
         color: color('neutral','dark');

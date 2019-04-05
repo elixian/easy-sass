@@ -11,8 +11,8 @@
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
-  .btn-flat {
-    border: transparent; }
+  .btn-flat_border {
+    border: 1px solid black; }
   .btn-rounded {
     border-radius: 5px; }
   .btn-shadow:hover {
@@ -20,15 +20,26 @@
   .btn_save {
     background: #198c73; }
     .btn_save:hover {
-      background: #28d9b2; }
+      background: #21b797; }
   .btn_delete {
-    background: #FF5A43; }
+    background: #d6331d; }
     .btn_delete:hover {
-      background: #ff9d90; }
+      background: #e55441; }
+  .btn_modify {
+    background: #fd811b; }
+    .btn_modify:hover {
+      background: #fd9d4e; }
+  .btn_cancel {
+    background: #ccc; }
+    .btn_cancel:hover {
+      background: #dadada; }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px); }
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  grid-row-gap: 24px;
+  grid-column-gap: 30px; }
 
 .justify-center {
   justify-self: center; }
@@ -36,13 +47,17 @@
 html, body {
   font-family: "Poppins", sans-serif; }
 
+section {
+  text-align: center;
+  margin: 5rem auto; }
+
 article {
-  margin: 2rem 3rem; }
+  margin: 2rem auto; }
   article .info {
     margin-top: .5rem;
     display: block;
     text-align: center;
-    font-size: .7rem;
+    font-size: .6rem;
     padding: 0.5rem;
     color: #555; }
     article .info-class {
