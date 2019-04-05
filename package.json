@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node-sass src/styles/scss/ -o src/styles/css/",
-    "scss": "node-sass --watch src/styles/scss/ -o src/styles/css/"
+    "scss": "node-sass --w src/styles/scss/ -o src/styles/css/"
   },
   "author": "Franck Colombo",
   "license": "ISC",

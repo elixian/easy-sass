@@ -3,12 +3,15 @@
 //______________ See _settings for set up size button __________
 
 $listButtons : ('save','delete','modify','cancel');
-//$listButtons : append($listButtons,plop);
+@if length($addButons) > 0{
+    $listButtons : join($listButtons,$addButons);
+}
+
 
 /*              Butons
 ================================ */
 button.btn,a.btn{
-    
+
     display: inline-block;
     color: white;
     padding: .5em;
