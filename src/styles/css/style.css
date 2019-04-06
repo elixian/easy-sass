@@ -11,11 +11,11 @@ button.btn, a.btn {
   min-width: 150px;
   outline: none;
   will-change: box-shadow;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
+  -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
   button.btn-flat_border, a.btn-flat_border {
     border: 2px solid black; }
   button.btn-rounded, a.btn-rounded {
@@ -24,6 +24,10 @@ button.btn, a.btn {
     -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.911);
     -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.911);
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.911); }
+    button.btn-shadow_up, a.btn-shadow_up {
+      -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.911);
+      -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.911);
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.911); }
     button.btn-shadow_hov:hover, a.btn-shadow_hov:hover {
       -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.911);
       -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.911);
