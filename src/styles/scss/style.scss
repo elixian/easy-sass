@@ -7,42 +7,19 @@
 
 
 
+// Your code here :) Enjoy or not :p
 
-/*             CSS DISPLAY EXEMPLE
-===============================================*/
-*{
-    font-family: $font-family_poppins;
-    box-sizing: border-box;
-}
-section{
-    text-align: center;
-    margin:5rem auto;
-    .grid{
-        margin-bottom:4rem;
-    }
-}
-article{
-    display: inline-table;
-    margin: 2rem auto;
-    width: 60%;
-    padding: 3rem;
-    box-shadow: 0px 0px 2px black;
 
-    .info{
-        margin-top:.5rem;
-        display: block;
-        text-align:center;
-        font-size: .6rem;
-        padding: 0.5rem;
-       
-        color: color('neutral','dark');
 
-        &-class{
-            background: color('neutral','light');
-        }
-    }
-}
 
+// Delete all the following lines
+
+/********************************************
+*   code de mise en page pour la présentaiton
+**********************************************/
+
+
+@import 'presentation';
 
 
 
