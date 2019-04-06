@@ -28,21 +28,21 @@ button.btn, a.btn {
       -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.911);
       -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.911);
       box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.911); }
-  button.btn_save, a.btn_save {
+  button.btn.btn_save, a.btn.btn_save {
     background: #198c73; }
-    button.btn_save:hover, a.btn_save:hover {
+    button.btn.btn_save:hover, a.btn.btn_save:hover {
       background: #21b797; }
-  button.btn_delete, a.btn_delete {
+  button.btn.btn_delete, a.btn.btn_delete {
     background: #d6331d; }
-    button.btn_delete:hover, a.btn_delete:hover {
+    button.btn.btn_delete:hover, a.btn.btn_delete:hover {
       background: #e55441; }
-  button.btn_modify, a.btn_modify {
+  button.btn.btn_modify, a.btn.btn_modify {
     background: #fd811b; }
-    button.btn_modify:hover, a.btn_modify:hover {
+    button.btn.btn_modify:hover, a.btn.btn_modify:hover {
       background: #fd9d4e; }
-  button.btn_cancel, a.btn_cancel {
+  button.btn.btn_cancel, a.btn.btn_cancel {
     background: #ccc; }
-    button.btn_cancel:hover, a.btn_cancel:hover {
+    button.btn.btn_cancel:hover, a.btn.btn_cancel:hover {
       background: #dadada; }
 
 /*          GRID

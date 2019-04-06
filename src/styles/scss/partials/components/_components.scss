@@ -50,7 +50,7 @@ button.btn,a.btn{
     //*       Iteration button 
     //=========================================== */
     @each $item in $listButtons{
-        &_#{$item}{
+        &.btn_#{$item}{
             background:color($item);
             &:hover{
                 background:color($item,'light');
