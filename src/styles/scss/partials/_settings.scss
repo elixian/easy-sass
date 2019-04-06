@@ -6,7 +6,8 @@ $btn-size_min : 150px  !default; // size button
 $btn-rounded_radius : 5px !default; // border-radius
 $btn-border : 2px solid black !default;
 $addButons: ();  // add butons, use the name class ie .btn-foo $addButons(foo)
-
+$box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.911);
+$box-shadow_hover : 0px 0px 6px rgba(0, 0, 0, 0.911);    // effet sur le hover button;
 @if $debug{
     @warn "ok is true";
     .debug , .grid>div{

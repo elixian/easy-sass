@@ -12,3 +12,10 @@
 .justify-center{
     justify-self: center;
 }
+
+/*      Shadow box
+========================== */
+
+.shadowed{
+    @include shadow();
+}

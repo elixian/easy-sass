@@ -8,6 +8,7 @@ button.btn, a.btn {
   text-decoration: none;
   text-align: center;
   min-width: 150px;
+  will-change: box-shadow;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
@@ -17,8 +18,14 @@ button.btn, a.btn {
     border: 2px solid black; }
   button.btn-rounded, a.btn-rounded {
     border-radius: 5px; }
-  button.btn-shadow:hover, a.btn-shadow:hover {
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2); }
+  button.btn-shadow, a.btn-shadow {
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.911);
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.911);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.911); }
+    button.btn-shadow_hov:hover, a.btn-shadow_hov:hover {
+      -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.911);
+      -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.911);
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.911); }
   button.btn_save, a.btn_save {
     background: #198c73; }
     button.btn_save:hover, a.btn_save:hover {
@@ -47,6 +54,13 @@ button.btn, a.btn {
 
 .justify-center {
   justify-self: center; }
+
+/*      Shadow box
+========================== */
+.shadowed {
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6); }
 
 /*             CSS DISPLAY EXEMPLE
 ===============================================*/

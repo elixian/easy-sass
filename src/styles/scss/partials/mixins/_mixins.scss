@@ -73,14 +73,24 @@
 //*             TRANSITION              **
 //***************************************
 
-@mixin transition($args...) {
-    -webkit-transition: $args;
-    -moz-transition: $args;
-    -ms-transition: $args;
-    -o-transition: $args;
-    transition: $args;
+@mixin transition($args_trans...) {
+    -webkit-transition: $args_trans;
+    -moz-transition: $args_trans;
+    -ms-transition: $args_trans;
+    -o-transition: $args_trans;
+    transition: $args_trans;
   }
 
+  //***************************************
+//*             SHADOW-BOX             **
+//***************************************
+
+@mixin shadow($args...){
+  @if length($args) == 0 { $args:0px 0px 3px rgba(0,0,0,.6)}
+  -webkit-box-shadow: $args;
+  -moz-box-shadow: $args;
+  box-shadow: $args;
+}
   //***************************************
 //*             HIDE ELEMENT FOR         **
 //                READER                 **
