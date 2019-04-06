@@ -4,6 +4,8 @@
 
 Easy Sass is based on semantics. [Preview](https://htmlpreview.github.io/?https://github.com/elixian/easy-sass/blob/master/src/index.html)
 
+Global explanation ``element element-type-design_action`` et/ou ``element-design``.
+
 You want apply/redisign a button style on an **anchor** or a **button**. The easier way is to use thoses class ``btn btn-flat``and it's done !!
 
 Futhermore you can personalize the global style like size, color, fonts, border and more, see [settings section](#Settings)
@@ -31,9 +33,9 @@ example code
 
 ### Border
 
-To add a border effect on your button just postfix the base class with ``_border``
+To add a border effect on your button just postfix the base class with ``-border``
 here is an exemple :
-![image buttons flat](https://github.com/elixian/easy-sass/blob/master/_preview/_border_.png)
+![image buttons flat](https://github.com/elixian/easy-sass/blob/master/_preview/_border.png)
 
 
 

@@ -16,7 +16,7 @@ button.btn, a.btn {
   -ms-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
-  button.btn-flat_border, a.btn-flat_border {
+  button.btn-flat-border, a.btn-flat-border {
     border: 2px solid black; }
   button.btn-rounded, a.btn-rounded {
     border-radius: 5px; }
