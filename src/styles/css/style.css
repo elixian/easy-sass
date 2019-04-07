@@ -36,18 +36,82 @@ button.btn, a.btn {
     background: #198c73; }
     button.btn.btn_save:hover, a.btn.btn_save:hover {
       background: #21b797; }
+    button.btn.btn_save.gradient_top, a.btn.btn_save.gradient_top {
+      background: linear-gradient(0, #198c73 0%, #31dab5 100%); }
+      button.btn.btn_save.gradient_top:hover, a.btn.btn_save.gradient_top:hover {
+        opacity: .8; }
+    button.btn.btn_save.gradient_right, a.btn.btn_save.gradient_right {
+      background: linear-gradient(90deg, #198c73 0%, #31dab5 100%); }
+      button.btn.btn_save.gradient_right:hover, a.btn.btn_save.gradient_right:hover {
+        opacity: .8; }
+    button.btn.btn_save.gradient_bottom, a.btn.btn_save.gradient_bottom {
+      background: linear-gradient(180deg, #198c73 0%, #31dab5 100%); }
+      button.btn.btn_save.gradient_bottom:hover, a.btn.btn_save.gradient_bottom:hover {
+        opacity: .8; }
+    button.btn.btn_save.gradient_left, a.btn.btn_save.gradient_left {
+      background: linear-gradient(270deg, #198c73 0%, #31dab5 100%); }
+      button.btn.btn_save.gradient_left:hover, a.btn.btn_save.gradient_left:hover {
+        opacity: .8; }
   button.btn.btn_delete, a.btn.btn_delete {
     background: #d6331d; }
     button.btn.btn_delete:hover, a.btn.btn_delete:hover {
       background: #e55441; }
+    button.btn.btn_delete.gradient_top, a.btn.btn_delete.gradient_top {
+      background: linear-gradient(0, #d6331d 0%, #eb7d6e 100%); }
+      button.btn.btn_delete.gradient_top:hover, a.btn.btn_delete.gradient_top:hover {
+        opacity: .8; }
+    button.btn.btn_delete.gradient_right, a.btn.btn_delete.gradient_right {
+      background: linear-gradient(90deg, #d6331d 0%, #eb7d6e 100%); }
+      button.btn.btn_delete.gradient_right:hover, a.btn.btn_delete.gradient_right:hover {
+        opacity: .8; }
+    button.btn.btn_delete.gradient_bottom, a.btn.btn_delete.gradient_bottom {
+      background: linear-gradient(180deg, #d6331d 0%, #eb7d6e 100%); }
+      button.btn.btn_delete.gradient_bottom:hover, a.btn.btn_delete.gradient_bottom:hover {
+        opacity: .8; }
+    button.btn.btn_delete.gradient_left, a.btn.btn_delete.gradient_left {
+      background: linear-gradient(270deg, #d6331d 0%, #eb7d6e 100%); }
+      button.btn.btn_delete.gradient_left:hover, a.btn.btn_delete.gradient_left:hover {
+        opacity: .8; }
   button.btn.btn_modify, a.btn.btn_modify {
     background: #fd811b; }
     button.btn.btn_modify:hover, a.btn.btn_modify:hover {
       background: #fd9d4e; }
+    button.btn.btn_modify.gradient_top, a.btn.btn_modify.gradient_top {
+      background: linear-gradient(0, #fd811b 0%, #feb980 100%); }
+      button.btn.btn_modify.gradient_top:hover, a.btn.btn_modify.gradient_top:hover {
+        opacity: .8; }
+    button.btn.btn_modify.gradient_right, a.btn.btn_modify.gradient_right {
+      background: linear-gradient(90deg, #fd811b 0%, #feb980 100%); }
+      button.btn.btn_modify.gradient_right:hover, a.btn.btn_modify.gradient_right:hover {
+        opacity: .8; }
+    button.btn.btn_modify.gradient_bottom, a.btn.btn_modify.gradient_bottom {
+      background: linear-gradient(180deg, #fd811b 0%, #feb980 100%); }
+      button.btn.btn_modify.gradient_bottom:hover, a.btn.btn_modify.gradient_bottom:hover {
+        opacity: .8; }
+    button.btn.btn_modify.gradient_left, a.btn.btn_modify.gradient_left {
+      background: linear-gradient(270deg, #fd811b 0%, #feb980 100%); }
+      button.btn.btn_modify.gradient_left:hover, a.btn.btn_modify.gradient_left:hover {
+        opacity: .8; }
   button.btn.btn_cancel, a.btn.btn_cancel {
     background: #ccc; }
     button.btn.btn_cancel:hover, a.btn.btn_cancel:hover {
       background: #dadada; }
+    button.btn.btn_cancel.gradient_top, a.btn.btn_cancel.gradient_top {
+      background: linear-gradient(0, #ccc 0%, white 100%); }
+      button.btn.btn_cancel.gradient_top:hover, a.btn.btn_cancel.gradient_top:hover {
+        opacity: .8; }
+    button.btn.btn_cancel.gradient_right, a.btn.btn_cancel.gradient_right {
+      background: linear-gradient(90deg, #ccc 0%, white 100%); }
+      button.btn.btn_cancel.gradient_right:hover, a.btn.btn_cancel.gradient_right:hover {
+        opacity: .8; }
+    button.btn.btn_cancel.gradient_bottom, a.btn.btn_cancel.gradient_bottom {
+      background: linear-gradient(180deg, #ccc 0%, white 100%); }
+      button.btn.btn_cancel.gradient_bottom:hover, a.btn.btn_cancel.gradient_bottom:hover {
+        opacity: .8; }
+    button.btn.btn_cancel.gradient_left, a.btn.btn_cancel.gradient_left {
+      background: linear-gradient(270deg, #ccc 0%, white 100%); }
+      button.btn.btn_cancel.gradient_left:hover, a.btn.btn_cancel.gradient_left:hover {
+        opacity: .8; }
 
 /*          GRID
 =======================================*/

@@ -4,6 +4,14 @@ $debug : false;
 //===============================================*/
 
 $transition-type : cubic-bezier(0.165, 0.84, 0.44, 1);
+
+$orientation-gradient-list : (   
+    'top' :0,
+    'right':90deg,
+    'bottom':180deg,
+    'left':270deg
+);
+
 //*    Button settings
 //=============================================== */
 $btn-size_min : 150px  !default; // size button

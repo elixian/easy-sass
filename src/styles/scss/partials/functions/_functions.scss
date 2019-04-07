@@ -27,3 +27,14 @@
 
   // TODO
   //function setnewShadow($base-shadow, $blur:"", $shadow-color)
+
+
+  // Function gradientlinear
+
+  @function gradient($base,$orientation: 'top'){
+      @if map-has-key($orientation-gradient-list, $orientation){
+        $tint : lighten($base,20%);
+        @return linear-gradient(map-get($orientation-gradient-list,$orientation), $base 0%, $tint 100%);
+      }
+      
+  }

@@ -58,6 +58,17 @@ button.btn,a.btn{
             &:hover{
                 background:color($item,'light');
             }
+
+            @each $orientation in $orientation-gradient-list{
+                $key : nth($orientation,1); 
+                &.gradient_#{$key}{  
+                        
+                     background: gradient(color($item),$key );
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+            }
         }
     }
 }

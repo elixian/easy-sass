@@ -1,5 +1,6 @@
 @import '../functions/functions.scss';
 
+
 //***************************************
 //*             FONT                   **
 //***************************************
@@ -90,6 +91,15 @@
   -webkit-box-shadow: $args;
   -moz-box-shadow: $args;
   box-shadow: $args;
+}
+
+
+@mixin gradient($base) {
+  @each $orientation in $orientation-gradient-list{
+    .gradient#{$orientation}{
+      background:gradient($base,$orientation);
+    }
+  }
 }
   //***************************************
 //*             HIDE ELEMENT FOR         **
