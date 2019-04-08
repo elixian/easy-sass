@@ -113,6 +113,11 @@ button.btn, a.btn {
       button.btn.btn_cancel.gradient_left:hover, a.btn.btn_cancel.gradient_left:hover {
         opacity: .8; }
 
+/*
+=================*/
+.block {
+  display: block; }
+
 /*          GRID
 =======================================*/
 .grid {
