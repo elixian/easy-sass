@@ -1,0 +1,15 @@
+
+input[type="text"]{
+    color : #a8a8a8; //$color-input-text;
+    width: 150px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+
+    &:focus{
+        outline: none;
+    }
+
+    .input-e_1{
+        background: #a8a8a8;
+    }
+}
