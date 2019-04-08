@@ -34,6 +34,10 @@ button.btn,a.btn{
     //-------------------------*/
     &-rounded{
         border-radius: $btn-rounded_radius;
+        &-border {
+            @extend .btn-rounded;
+            border: $btn-border;
+        }
     }
 
     //*      shadow

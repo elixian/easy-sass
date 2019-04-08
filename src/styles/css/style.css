@@ -17,13 +17,15 @@ button.btn, a.btn {
   -o-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1); }
   button.btn-flat-border, a.btn-flat-border {
-    border: 2px solid black; }
-  button.btn-rounded, a.btn-rounded {
-    border-radius: 5px; }
+    border: 1px solid rgba(0, 0, 0, 0.6); }
+  button.btn-rounded, button.btn-rounded-border, a.btn-rounded, a.btn-rounded-border {
+    border-radius: 10px; }
+    button.btn-rounded-border, a.btn-rounded-border {
+      border: 1px solid rgba(0, 0, 0, 0.6); }
   button.btn-shadow, a.btn-shadow {
-    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.911);
-    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.911);
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.911); }
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9); }
     button.btn-shadow_up, a.btn-shadow_up {
       -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.911);
       -moz-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.911);
