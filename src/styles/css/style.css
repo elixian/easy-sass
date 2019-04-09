@@ -25,7 +25,7 @@ button.btn, a.btn {
   button.btn-flat-border, a.btn-flat-border {
     border: 1px solid rgba(0, 0, 0, 0.6); }
   button.btn-rounded, button.btn-rounded-border, a.btn-rounded, a.btn-rounded-border {
-    border-radius: 10px; }
+    border-radius: 6px; }
     button.btn-rounded-border, a.btn-rounded-border {
       border: 1px solid rgba(0, 0, 0, 0.6); }
   button.btn-shadow, a.btn-shadow {
