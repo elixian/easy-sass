@@ -198,6 +198,26 @@ input[type="text"] {
     opacity: 1;
     width: 100%; }
 
+.input-border_e3 {
+  background: transparent; }
+  .input-border_e3 ~ .focus-bg:before, .input-border_e3 ~ .focus-bg:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #cbcbcb;
+    transition: 0.5s;
+    z-index: -1; }
+  .input-border_e3 ~ .focus-bg:after {
+    right: 0;
+    left: auto;
+    background: #cbcbcb; }
+  .input-border_e3:focus ~ .focus-bg:after, .input-border_e3:focus ~ .focus-bg:before {
+    transition: 0.8s cubic-bezier(0.1, 0.45, 0.56, 0.63, 0.2);
+    width: 50%; }
+
 /*
 =================*/
 .block {
