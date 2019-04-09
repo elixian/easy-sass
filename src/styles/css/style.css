@@ -121,6 +121,65 @@ button.btn, a.btn {
       button.btn.btn_cancel.gradient_left:hover, a.btn.btn_cancel.gradient_left:hover {
         opacity: .8; }
 
+input[type="text"] {
+  font: 15px/24px "Muli", sans-serif;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  outline: none; }
+
+.inputs.flex {
+  display: flex;
+  flex-direction: row; }
+  .inputs.flex label {
+    white-space: nowrap;
+    margin-right: 10px;
+    align-self: center; }
+
+.wrapper-input {
+  width: 250px;
+  position: relative; }
+
+[class^='input-border'] {
+  border: 1px solid #ccc;
+  padding: 7px 14px 9px; }
+
+.input-border_e1 {
+  transition: 0.4s; }
+  .input-border_e1 ~ .focus-border:after, .input-border_e1 ~ .focus-border:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #4caf50;
+    transition: 0.4s; }
+  .input-border_e1 ~ .focus-border:after {
+    top: auto;
+    bottom: 0; }
+  .input-border_e1 ~ .focus-border i:before, .input-border_e1 ~ .focus-border i:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: #4caf50;
+    transition: 0.6s; }
+  .input-border_e1 ~ .focus-border i:after {
+    left: auto;
+    right: 0; }
+  .input-border_e1:focus ~ .focus-border:after, .input-border_e1:focus ~ .focus-border:before {
+    left: 0;
+    width: 100%;
+    transition: 0.4s cubic-bezier(0.1, 0.45, 0.56, 0.63, 0.2); }
+  .input-border_e1:focus ~ .focus-border i:after, .input-border_e1:focus ~ .focus-border i:before {
+    top: 0;
+    height: 100%;
+    transition: 0.5s cubic-bezier(0.1, 0.45, 0.56, 0.63, 0.2); }
+
 /*
 =================*/
 .block {
