@@ -10,7 +10,8 @@ input[type="text"]{
 	outline:none;
 }
 
-.inputs.flex{
+//Allow well display labe o the left
+.inputs-label_left{
 	display:flex;
 	flex-direction: row;
 	label{
@@ -23,39 +24,41 @@ input[type="text"]{
 // Set the size input
 .wrapper-input{
 		width: $size-global-inputs;  
-		position: relative;
+        position: relative;
+        z-index:2; //règle les problèmes liés à un éventuel background
 }
 
 [class^='input-border']{
-    border: 1px solid #ccc;
+    border: 1px solid $input-border-color ;
 	padding: 7px 14px 9px;
 }
 
+
+// effect 1 -- transition border --
 .input-border_e1{
-	
 	transition: 0.4s;
-	 ~ .focus-border:after, ~ .focus-border:before {
+	 ~ .focus-border:after, ~ .focus-border:before { // line top and bottom
 		 	content: ""; 
 		 	position: absolute;
 		 	top: 0; 
 		 	left: 50%; 
 		 	width: 0; 
 		 	height: 2px; 
-		 	background-color: #4caf50;
+		 	background-color: $input-border-color_focus;
 		 	transition: 0.4s ;
 	}
 	~ .focus-border:after{
 		top: auto; bottom: 0;
 	}
-	~.focus-border{
-		i:before, i:after{
+	~ .focus-border{
+		i:before, i:after{ // line left and right
 			content: ""; 
 			position: absolute; 
 			top: 50%; 
 			left: 0; 
 			width: 2px; 
 			height: 0; 
-			background-color: #4caf50; 
+			background-color: $input-border-color_focus; 
 			transition: 0.6s;
 		}
 		i:after{left: auto; right: 0;}
@@ -64,8 +67,13 @@ input[type="text"]{
 		&:after, &:before{left: 0; width: 100%; transition: 0.4s $transition-bezier;}
 		i:after, i:before{top: 0; height: 100%; transition: 0.5s $transition-bezier;}
 	}
-	
-	
 }
 
 		
+.input-border_e2{
+    background:transparent;
+	~ .focus-bg{
+		position: absolute; left: 0; top: 0; width: 0%; height: 100%; background-color:$input-background-color-focus; opacity: 0; transition: 0.5s; z-index: -1;
+	}
+	&:focus ~ .focus-bg{transition: 0.8s $transition-bezier; opacity: 1; width:100%;}
+}

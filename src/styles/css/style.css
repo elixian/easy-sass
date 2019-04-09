@@ -129,20 +129,21 @@ input[type="text"] {
   letter-spacing: 1px;
   outline: none; }
 
-.inputs.flex {
+.inputs-label_left {
   display: flex;
   flex-direction: row; }
-  .inputs.flex label {
+  .inputs-label_left label {
     white-space: nowrap;
     margin-right: 10px;
     align-self: center; }
 
 .wrapper-input {
   width: 250px;
-  position: relative; }
+  position: relative;
+  z-index: 2; }
 
 [class^='input-border'] {
-  border: 1px solid #ccc;
+  border: 1px solid #bebebe;
   padding: 7px 14px 9px; }
 
 .input-border_e1 {
@@ -154,7 +155,7 @@ input[type="text"] {
     left: 50%;
     width: 0;
     height: 2px;
-    background-color: #4caf50;
+    background-color: #d81396;
     transition: 0.4s; }
   .input-border_e1 ~ .focus-border:after {
     top: auto;
@@ -166,7 +167,7 @@ input[type="text"] {
     left: 0;
     width: 2px;
     height: 0;
-    background-color: #4caf50;
+    background-color: #d81396;
     transition: 0.6s; }
   .input-border_e1 ~ .focus-border i:after {
     left: auto;
@@ -179,6 +180,23 @@ input[type="text"] {
     top: 0;
     height: 100%;
     transition: 0.5s cubic-bezier(0.1, 0.45, 0.56, 0.63, 0.2); }
+
+.input-border_e2 {
+  background: transparent; }
+  .input-border_e2 ~ .focus-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #cbcbcb;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -1; }
+  .input-border_e2:focus ~ .focus-bg {
+    transition: 0.8s cubic-bezier(0.1, 0.45, 0.56, 0.63, 0.2);
+    opacity: 1;
+    width: 100%; }
 
 /*
 =================*/
@@ -221,6 +239,18 @@ section {
   margin: 5rem auto; }
   section .grid {
     margin-bottom: 4rem; }
+    section .grid.col-2 {
+      grid-template-columns: repeat(2, auto); }
+  section .main_title {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 16px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    transform-origin: center;
+    text-shadow: 0px 1px 2px #000000, -1px 0px 3px #2d2d2d;
+    color: #ffffff; }
 
 article {
   display: inline-table;

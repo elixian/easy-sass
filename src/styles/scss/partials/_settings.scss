@@ -37,3 +37,7 @@ $box-shadow_hover : 0px 0px 6px rgba(0, 0, 0, 0.911);    // effet sur le hover b
 
 $font-input : 15px/24px 'Muli', sans-serif;
 $size-global-inputs : 250px;
+
+$input-border-color:#bebebe;
+$input-border-color_focus:#d81396;
+$input-background-color-focus:lighten($input-border-color,5%);
