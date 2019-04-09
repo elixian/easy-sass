@@ -129,13 +129,15 @@ input[type="text"] {
   letter-spacing: 1px;
   outline: none; }
 
-.inputs-label_left {
-  display: flex;
-  flex-direction: row; }
-  .inputs-label_left label {
-    white-space: nowrap;
-    margin-right: 10px;
-    align-self: center; }
+.label-left {
+  white-space: nowrap;
+  margin-right: 10px;
+  align-self: center;
+  /* float: left; */
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: -105px; }
 
 .wrapper-input {
   width: 250px;
@@ -218,6 +220,24 @@ input[type="text"] {
     transition: 0.8s cubic-bezier(0.1, 0.45, 0.56, 0.63, 0.2);
     width: 50%; }
 
+.input-border_e4 {
+  background: transparent; }
+
+label.label-up {
+  position: absolute;
+  right: 54%;
+  top: 8px;
+  transition: transform 0.5s ease-in-out;
+  opacity: .5;
+  z-index: -1; }
+
+.input-border_e4:focus ~ label, .input-border_e4:not(:placeholder-shown) ~ label {
+  transform: translate(-5px, -32px);
+  color: #2855e9;
+  font-size: -2px;
+  opacity: 1;
+  transition: 0.5s ease-in-out; }
+
 /*
 =================*/
 .block {
@@ -260,7 +280,8 @@ section {
   section .grid {
     margin-bottom: 4rem; }
     section .grid.col-2 {
-      grid-template-columns: repeat(2, auto); }
+      grid-template-columns: repeat(2, auto);
+      grid-column-gap: 13rem; }
   section .main_title {
     font-size: 3rem;
     font-weight: bold;

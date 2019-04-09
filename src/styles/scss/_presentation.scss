@@ -14,7 +14,8 @@ section{
     .grid{
         margin-bottom:4rem;
         &.col-2{
-            grid-template-columns: repeat(2,auto)
+            grid-template-columns: repeat(2,auto);
+            grid-column-gap: 13rem;
         }
     }
     .main_title{

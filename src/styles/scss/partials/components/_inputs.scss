@@ -11,15 +11,18 @@ input[type="text"]{
 }
 
 //Allow well display labe o the left
-.inputs-label_left{
-	display:flex;
-	flex-direction: row;
-	label{
-		white-space:nowrap;
-		margin-right:10px;
-		align-self:center;	
-	}
+.label-left{
+    white-space: nowrap;
+    margin-right: 10px;
+    align-self: center;
+    /* float: left; */
+    position: absolute;
+    display: block;
+    top: 10px;
+    left: -105px;
 }
+
+
 
 // Set the size input
 .wrapper-input{
@@ -99,4 +102,24 @@ input[type="text"]{
         background: $input-background-color-focus;
     }
 	&:focus ~ .focus-bg:after,&:focus ~ .focus-bg:before {transition: 0.8s $transition-bezier; width:50%;}
+}
+
+//effet label up
+.input-border_e4{
+    background:transparent;
+}
+label.label-up{
+    position: absolute;
+    right: 54%;
+    top: 8px;
+    transition: transform 0.5s ease-in-out;
+    opacity: .5;
+    z-index:-1;
+}
+.input-border_e4:focus ~ label, .input-border_e4:not(:placeholder-shown) ~ label{
+    transform: translate(-5px,-32px);
+    color:#2855e9;
+    font-size: -2px;
+    opacity: 1;
+    transition:  0.5s ease-in-out;
 }
