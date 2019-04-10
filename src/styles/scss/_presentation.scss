@@ -44,8 +44,9 @@ article{
         text-align:center;
         font-size: .6rem;
         padding: 0.5rem;
-       
+        border: 1px dotted brown;
         color: color('neutral','dark');
+        margin-bottom:1rem;
 
         &-class{
             background: color('neutral','light');

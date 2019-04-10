@@ -304,6 +304,8 @@ article {
     text-align: center;
     font-size: .6rem;
     padding: 0.5rem;
-    color: #555; }
+    border: 1px dotted brown;
+    color: #555;
+    margin-bottom: 1rem; }
     article .info-class {
       background: #f7f7f7; }
