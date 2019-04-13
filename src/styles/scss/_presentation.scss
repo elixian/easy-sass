@@ -31,7 +31,7 @@ section{
     color: #ffffff;
     }
 }
-article{
+article.component{
     display: inline-table;
     margin: 2rem auto;
     width: 60%;
@@ -54,3 +54,29 @@ article{
         }
     }
 }
+
+//Presentation GRID Layouts
+.grid-presentation{
+    display: block;
+    width: 69vw;
+    margin: 3rem auto;
+    .grid-12{
+        height:50vh;
+        width:100%;
+        header{
+            background: #f024249a;
+        }
+        
+        aside,article{
+            background:rgba(45, 45, 204, 0.527);
+        }
+        
+        footer{
+            height:100%;
+            background:#f024249a;
+        }
+    }
+}
+
+
+

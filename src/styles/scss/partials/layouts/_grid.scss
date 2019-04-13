@@ -1,0 +1,49 @@
+
+.grid-12{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+
+    //generate columns spans for grid 12
+    @for $i from 2 to 13 {
+        .col-#{$i}\/12{
+            grid-column: span $i;
+        }
+    }
+}
+
+.grid-areas {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+      "sidenav header"
+      "sidenav main"
+      "sidenav footer";
+    height: 100vh;
+
+    header {
+        grid-area: header;
+        background-color: #648ca6;
+      }
+      
+      aside {
+        grid-area: sidenav;
+        background-color: #394263;
+      }
+      
+      article {
+        grid-area: main;
+        background-color: #8fd4d9;
+      }
+      
+      footer {
+        grid-area: footer;
+        background-color: #648ca6;
+      }
+  }
+
+.row-span-2{
+    grid-row: span 2; 
+}
