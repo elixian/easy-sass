@@ -59,21 +59,11 @@ article.component{
 .grid-presentation{
     display: block;
     width: 69vw;
-    margin: 3rem auto;
+    margin:  auto;
     .grid-12{
-        height:50vh;
-        width:100%;
-        header{
-            background: #f024249a;
-        }
-        
-        aside,article{
-            background:rgba(45, 45, 204, 0.527);
-        }
-        
-        footer{
-            height:100%;
-            background:#f024249a;
+        > div{
+            background: #b3b3b3;
+            height:25px;
         }
     }
 }

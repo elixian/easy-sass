@@ -1,7 +1,17 @@
 $debug : false;
+$demo : true;
 //
 //*    GLOBAL SETTINGS
 //===============================================*/
+
+@if $debug{
+    *:not(path):not(g) {
+        color:                    hsla(210, 100%, 100%, 0.9) !important;
+        background:               hsla(210, 100%,  50%, 0.5) !important;
+        outline:    solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+        box-shadow: none !important;
+    }
+}
 
 $transition-type : cubic-bezier(0.165, 0.84, 0.44, 1);
 
@@ -41,3 +51,15 @@ $size-global-inputs : 250px;
 $input-border-color:#bebebe;
 $input-border-color_focus:#d81396;
 $input-background-color-focus:lighten($input-border-color,5%);
+
+
+//              GRID LAYOUTS 
+//===================================================
+$height-grid: 100vh;
+$template-grid-columns:240px 1fr;
+$template-grid-rows:    50px
+                        1fr 
+                        50px;
+$template-format :  "sidenav header"
+                    "sidenav main"
+                    "sidenav footer";

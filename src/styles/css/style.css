@@ -237,16 +237,22 @@ input[type="text"] {
     opacity: 1;
     transition: 0.5s ease-in-out; }
 
-/*
-=================*/
 .block {
   display: block; }
 
-.space-top_1rem {
+.u-text-align {
+  text-align: center; }
+
+.u-space-top_1rem {
   margin-top: 1rem; }
 
-.space-top_3rem {
+.u-space-top_3rem {
   margin-top: 3rem; }
+
+.u-scroll-snap-y {
+  scroll-snap-type: y mandatory; }
+  .u-scroll-snap-y .u-scroll-align {
+    scroll-snap-align: start; }
 
 /*          GRID
 =======================================*/
@@ -301,16 +307,16 @@ input[type="text"] {
   grid-template-rows: 50px 1fr 50px;
   grid-template-areas: "sidenav header" "sidenav main" "sidenav footer";
   height: 100vh; }
-  .grid-areas header {
+  .grid-areas .header {
     grid-area: header;
     background-color: #648ca6; }
-  .grid-areas aside {
+  .grid-areas .nav {
     grid-area: sidenav;
     background-color: #394263; }
-  .grid-areas article {
+  .grid-areas .main {
     grid-area: main;
     background-color: #8fd4d9; }
-  .grid-areas footer {
+  .grid-areas .footer {
     grid-area: footer;
     background-color: #648ca6; }
 
@@ -371,14 +377,7 @@ article.component {
 .grid-presentation {
   display: block;
   width: 69vw;
-  margin: 3rem auto; }
-  .grid-presentation .grid-12 {
-    height: 50vh;
-    width: 100%; }
-    .grid-presentation .grid-12 header {
-      background: #f024249a; }
-    .grid-presentation .grid-12 aside, .grid-presentation .grid-12 article {
-      background: rgba(45, 45, 204, 0.527); }
-    .grid-presentation .grid-12 footer {
-      height: 100%;
-      background: #f024249a; }
+  margin: auto; }
+  .grid-presentation .grid-12 > div {
+    background: #b3b3b3;
+    height: 25px; }

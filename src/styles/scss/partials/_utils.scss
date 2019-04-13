@@ -1,18 +1,30 @@
 
-/*
-=================*/
+
 .block {
     display: block;
 }
 
-.space-top_1rem{
+
+
+// Positions
+//------------------------------
+.u-text-align {
+    text-align: center;
+}
+
+.u-space-top_1rem{
     margin-top: 1rem;
 }
-.space-top_3rem{
+.u-space-top_3rem{
     margin-top: 3rem;
 }
 
-
+.u-scroll-snap-y{
+    scroll-snap-type: y mandatory;
+    .u-scroll-align{
+        scroll-snap-align: start;
+    }
+}
 
 /*          GRID
 =======================================*/
