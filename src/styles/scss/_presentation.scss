@@ -58,7 +58,7 @@ article.component{
 //Presentation GRID Layouts
 .grid-presentation{
     display: block;
-    width: 69vw;
+    width: 50vw;
     margin:  auto;
     .grid-12{
         > div{
@@ -66,6 +66,10 @@ article.component{
             height:25px;
         }
     }
+    .grid-areas{
+        height:50vh;
+    }
+
 }
 
 

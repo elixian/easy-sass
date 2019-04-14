@@ -56,10 +56,10 @@ $input-background-color-focus:lighten($input-border-color,5%);
 //              GRID LAYOUTS 
 //===================================================
 $height-grid: 100vh;
-$template-grid-columns:240px 1fr;
-$template-grid-rows:    50px
-                        1fr 
-                        50px;
+$template-grid-columns:240px 1fr; // 1st column size & second column size
+$template-grid-rows:    50px    /* 1st row height*/
+                        1fr     /* 2nd row height*/
+                        50px;   /* 3rd row height*/
 $template-format :  "sidenav header"
-                    "sidenav main"
+                    "sidenav main" 
                     "sidenav footer";
